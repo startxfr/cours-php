@@ -1,0 +1,44 @@
+TP Chapitre 5 - Les bases de données
+====================================
+
+TP Exercice 1 - Création des bases
+----------------------------------
+
+1. Accéder, via l'interface web, au programme phpMyAdmin (localhost/home/phpmyadmin/). Prendre le contenu du
+   fichier schema.sql et l'importer dans la base de donnée. (onglet SQL)
+2. Nous avons alors une base de donnée "bdphilia" qui contient 1 table "livres". Allez
+   regarder la structure de cette table
+3. Dans le répertoire inc/lib/ ouvrez le fichier db.inc.php. 
+4. Dans le fichier conf/conf.inc.php, modifiez la variable $dbConfig[0] avec les informations de connexion de votre 
+   base de donnée
+5. Dans le fichier db.inc.php, réaliser les opérations suivantes:
+   1. Créer une fonction doSqlInsert() acceptant 2 paramètres obligatoires :
+   		$db avec l'indice du tableau $dbConfig correspondant à la configuration que nous souhaitons
+   		$sql avec une requete SQL d'insertion
+	2. importer la variable globale $dbConfig
+	3. Tester l'existance de l'indice $db dans le tableau $dbConfig
+	4. Tester également que la requete SQL commence par INSERT ou insert
+    5. Utiliser l'objet PDO() pour se connecter à une base de donnée. Il faut pour cela créer
+       une instance de cette classe que nous stockerons dans la variable  $dbc
+    6. Nous allons utiliser la methode exec() pour executer notre requete. Le résultat sera stocké
+       dans une variable $count (les requetes insert retournent le nombre d'enregistrement demandé) 
+	7. On ferme la connexion	
+    8. On retourne le résultat
+6. Dans le fichier db.inc.php, créer doSqlSelect() (copie de doSqlInsert) acceptant 2 paramètres 
+   obligatoires :
+   		$db avec l'indice du tableau $dbConfig corespondant a la configuration que nous souhaitons
+   		$sql avec une requete SQL. Utiliser la methode query() dans une boucle pour récuperer un 
+   		tableau.
+7. Créer une fonction htmlMenu() dans html.inc.php qui accèpte 2 paramètres : $select et $lang ou $select
+   contient l'URL de la page selectionnée dans le menu (ex: index.php pour l'accueil)
+   Cette fonction doit générer le menu du site, à partir des informations contenues
+   dans la base de donnée (table: menu). 
+   Votre boucle permettant la création du menu doit controler si le menu est séléctionné. Si c'est le cas, 
+   vous devez rajouter l'attribut class="on"
+	Vous devez utiliser votre connaissance des tableaux et des chaines pour afficher ce menu, dans la langue
+	qui nous est passée en argument
+   
+   
+   
+   
+   

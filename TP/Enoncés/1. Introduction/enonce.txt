@@ -1,0 +1,20 @@
+TP Chapitre 1 - Introduction
+============================
+
+TP Exercice 1 - Installation du serveur web
+-------------------------------------------
+
+
+Vous allez devoir installer votre environement de developpement, composée d'un serveur web, de l'interpreteur php, du module web php, et de la base de donnée.
+Pour faciliter le deploiement de cette environement, nous allons utiliser un projet libre appelé EasyPHP
+
+
+Une fois installé, nous allons regarder les fichiers de configuration de ces outils, notament:
+* Le fichier de configuration Apache: httpd.conf
+* le fichier de configuration Mysql: my.cfg
+* le fichier de configuration PHP: php.ini
+
+Ainsi que les repertoires de log pour surveiller le comportement de notre serveur.
+* Pour les log d'accès:  /var/log/httpd/access_log
+* Pour les log d'erreur: /var/log/httpd/error_log 
+

@@ -1,0 +1,15 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 6 - Calcul de TVA et stock
+----------------------------------
+
+Nous allons afficher la tva 5.5 et le prix TTC des BD
+
+1. Dans le fichier doBd.php ajouter une constante TVA avec la valeur 5.5 (produit culturel ;)
+2. Récupérer dans une variable $ht le prix HT du livre
+3. Utiliser le prix HT et le taux de TVA pour calculer la TVA de la BD et stocker le résultat
+   dans une variable $tva
+4. Calculer le prix TTC et stocker le résultat dans une variable $ttc
+5. Modifiez votre fiche BD pour afficher les 2 nouvelles valeurs. Vous devrez également créer les
+   nouveaux libellés pour ces nouvelles informations.

@@ -1,0 +1,22 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 6 - Traitement des tableaux
+---------------------------------------
+
+1. Dans doBD.php, en utilisant les fonctions array_keys(), array_search(), current() 
+   et end(), rajouter 2 entrées dans le tableau de remplissage du gabarit d'une 
+   fiche ($data) nommée 'previous' et 'next' et qui contiennent un lien vers la BD
+   suivante et précédente quand cela est possible.
+2. Adapter l'attribution des valeurs aux variables $ref, $lang et $cgv pour permettre
+   le passage de paramètre via l'url
+3. Rajouter le passage d'un paramètre (en POST ou GET) nommé 'tri' et dont la valeur doit
+   être stocké dans $tri
+4. Dans la partie d'affichage du tableau des stocks, utiliser la fonction array_multisort()
+   pour trier le tableau selon le critère de tri demandé.
+   Il faudra pour cela créer un tableau intermédiaire contenant les clefs des oeuvres, et les 
+   valeurs corespondantes au champ de tri demandé.
+5. Rajouter dans le tableau Html des stock les liens sur les titre des colonnes permettant 
+   de passer d'un critère de tri à l'autre
+6. Toujours dans ce tableau, mettre un lien sur l'image et le titre permettant de voir la fiche
+   corespondante 

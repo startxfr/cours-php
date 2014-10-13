@@ -1,0 +1,27 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 4 - Menu de la page d'accueil dynamique
+---------------------------------------------------
+
+1. Dans votre fichier index.php, créer une nouvelle variable tableau nommée $menu.
+2. Dans cette variable, vous allez enregistrer les informations sur les
+   4 éléments du menu. Pour chaque élément, nous allons stocker
+   l'URL, le titre et le titre alternatif.Pour ces 2 dernières informations, nous 
+   enregistrerons les versions francaises et anglaises.
+   L'URL sera la clef principale du tableau. Pour chaque url, on auras 2 clef correspondant
+   au code de la lang (fr ou en). Pour chaque langue, nous aurons une clef desc avec 
+   le libellé du lien, et une clef title pour le titre alternatif.
+ exemple d'une des 4 entrée du tableau:
+	panier.php
+		fr
+			desc  => 'Panier'
+			title => 'Panier d\'achat'
+		en
+			desc => 'Cart'
+			title => 'Shopping Cart'
+3. Utiliser ce tableau pour l'affichage du menu. Vous devez utiliser la variable $lang pour
+   afficher le texte dans la langue séléctionnée. Seul le texte des liens est à rendre dynamique,
+   pas les URL.
+ 	
+

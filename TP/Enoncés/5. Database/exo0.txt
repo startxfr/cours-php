@@ -1,0 +1,28 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 10 - Les sessions
+-----------------------------
+
+Création d'un panier d'achat avec les variables de session
+
+1. Ouvrez le fichier session.inc.php situé dans le répertoire inc/lib/ 
+2. Lancer la création ou la récupération d'une SESSION appellée 'BDPhiliaPanier'
+3. Dans le fichier pannier.php
+4. Si l'on recoit une demande d'ajout au pannier , alors on enregistre dans le tableau $_SESSION
+   une clef correspondante à la référence de la BD commandée, et comme valeur
+   la quantité. Vous devez gérer l'incrémentation.
+5. Dans BDPhilia.inc.php, dupliquer la fonction bdInventaire() et la renommer bdPannier()
+   La personnaliser pour afficher la liste des Bd commandée par l'utilisateur.
+   La boucle de création du tableau doit être réalisée sur la SESSION. 
+   Changer la quantité en stock par la quantité commandée.
+6. Utiliser cette fonction dans votre fichier panier.php
+7. Dans bdPannier(), rajouter une colonne au tableau. Cette colonne contiendra, pour chaque 
+   bd commandée, 2 liens "+" et "-" vers une url du type ?action=addOne&ref=xxx
+8. Dans panier.php, faire le traitement de ces variables pour permettre d'incrémenter ou
+   décrementer la quantité commandée (dans SESSION). Supprimer l'entrée si la quantité est égale 
+   à zero.
+9. En option, dans le fichier session.inc.php. Utiliser les sessions pour mémoriser
+   la langue demandée par l'utilisateur, d'une page à l'autre, que ce soit en nous passant un 
+   paramètre POST ou GET. Si aucune information sur la langue n'est stockée en SESSION, alors nous 
+   récupèreront cette information grace à la variable $_SERVER et à la clef HTTP_ACCEPT_LANGUAGE

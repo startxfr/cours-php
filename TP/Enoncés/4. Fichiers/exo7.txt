@@ -1,0 +1,13 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 7 - Les information d'en-tête HTTP
+----------------------------------------------
+
+1. Dans doBd.php retirer le contrôle de la langue
+2. Mettre le contrôle de la langue dans le fichier conf.inc.php. Faire en sorte qu'il puisse
+   prendre en compte le passage d'un paramètre 'lang' en GET ou POST. Si ca n'est pas le cas
+   prendre la première langue disponible dans HTTP_ACCEPT_LANGUAGE
+3. Créer une variable $availableLang contenant un tableau des langues autorisées.
+4. Faire un contrôle de $lang et lui attribuer la première langue autorisée si une langue 
+   demandée n'existe pas.

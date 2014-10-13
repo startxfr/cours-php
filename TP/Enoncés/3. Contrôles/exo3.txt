@@ -1,0 +1,17 @@
+TP Chapitre 3 - Les Contrôles
+=============================
+
+TP Exercice 3 - fonctions de calculs
+------------------------------------
+
+1. Dans le fichier doBd.php supprimer la constante TVA créer, et la remplacer par:
+   1. Un tableau $tauxTva avec des clef numerique et 2 entrées : 5.5 et 19.6
+   2. Une constante TVA_APPLICABLE avec comme valeur l'indice de la clef corespondant au taux de 5.5
+2. Créer une fonction calcul_tva() avec 2 arguments: la somme HT et l'indice du taux de TVA à 
+   utiliser. Cette fonction doit retourner le montant de la TVA appliqué sur ce prix HT
+3. Créer une fonction calcul_ttc() avec 2 arguments: la somme HT et l'indice du taux de TVA à 
+   utiliser. Cette fonction doit retourner le prix TTC. Vous utiliserez la fonction précédente pour 
+   calculer le montant de la TVA.
+4. Utilisez ces 2 fonctions pour remplir les variables $tva et $ttc que nous affichons dans la 
+   fiche d'une BD. Vous devez utiliser la constante TVA_APPLICABLE pour choisir le taux de tva 
+   à appliquer.

@@ -1,0 +1,20 @@
+TP Chapitre 5 - Les bases de données
+====================================
+
+TP Exercice 2 - Insertion de contenu
+----------------------------------
+
+1. Dans le fichier inc.inc.php, créer une boucle sur le tableau $livres qui crée une requete SQL 
+   (stocké dans une variable $sql) du type :
+      INSERT INTO livres (id,ref,titre,auteur,editeur,prix,stock,sortie)
+	  VALUES (NULL, 'valeurRef', 'valuerTitre', 'valeurAuteur', 'valeurEditeur', 'prix', 'stock', 'sortie');
+   Les valeurs insérées proviennent des informations trouvées dans $livres.
+2. Dans cette boucle utiliser la fonction doSqlInsert() pour inserer le contenu de $livres dans notre
+   base de donnée. Ne pas oublier d'utiliser addslashes()
+3. Une fois les données importées, commentez votre code pour éviter les insertions multiples
+  
+   
+   
+   
+   
+   

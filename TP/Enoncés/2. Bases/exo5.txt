@@ -1,0 +1,35 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 5 - Recherche de livre
+----------------------------------
+
+1. Créer un fichier rechercheBd.php à partir du fichier index.php
+2. Dans le fichier index.php, rajouter un attribut class="on" sur le lien 
+   "Accueil" du menu
+3. Dans le fichier rechercheBd.php, rajouter un attribut class="on" sur le lien 
+   "Recherche" du menu
+4. Changer le titre de la page
+5. Créer un formulaire permettant de sélectionner:
+	1. une référence de livre
+	2. Une langue (français/anglais) par bouton radio
+	3. Une couleur de fond à partir d'une liste déroulante
+6. Créer un fichier doBd.php
+7. Dans le fichier doBd.php,créer un tableau $livres, pour lequel chaque livre est 
+   repéré par une référence de type BD000001, et contient les informations suivantes:
+	1. titre
+	2. Auteur
+	3. editeur
+	4. prix
+	5. stock
+	6. année de sortie
+Vous trouverez dans le fichier bd.csv toutes les informations pour créer ce tableau
+8. Créer un tableau $libelle, avec une liste, dans les 2 langues, des libellés à 
+   afficher (auteur, editeur, titre, prix, sortie)
+9. Récupérer dans des variables $ref, $lang et $fond les paramètres provenant du formulaire
+   rechercheBd.php. 
+10. Créer un tableau HTML pour afficher les informations du livre dont la référence est
+   passée par le formulaire. Ce tableau auras un fond de la couleur choisie. Les titres seront
+   dans la langue choisie.
+11. Pour les plus courageux, une image de chaque BD existe dans le répertoire img/bd/. Trouver un moyen
+   d'afficher cette image à gauche de notre fiche déscriptive.

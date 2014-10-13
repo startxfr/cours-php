@@ -1,0 +1,22 @@
+TP Chapitre 3 - Les Contrôles
+=============================
+
+TP Exercice 2 - Liste du stock de BD
+------------------------------------
+
+1. Dans le fichier doBd.php créer une variable $refIsFound booléenne, et définie à false.
+2. Vérifier que la référence demandée existe dans le tableau $livres. Si c'est le cas, alors
+   la variable $refIsFound doit être définie à true.
+3. Dans la partie affichage de la fiche, faire un controle de $refIsFound. S'il est vraie,
+   alors on affiche la fiche (comme avant). Dans le cas contraire, on affiche un tableau.
+4. Pour créer le tableau d'inventaire, vous allez devoir:
+   1. Créer une variable $msg qui contiendra tout le tableau construit
+   2. Créer des entrées dans le tableau $libelle pour le titre des colonnes du tableau
+   3. Pour chaque entrée dans le tableau $livres, remplir la variable $msg avec le code html
+      pour créer une ligne de tableau avec les information suivante: image, titre, prix, stock, 
+      total
+   4. Calculer la valeur total de l'inventaire. Afficher cette information sur la dernière ligne
+      du tableau HTML stocké dans la variable $msg
+   5. Afficher la variable $msg
+5. Pour aller plus loin, vous pouvez mettre en place un mecanisme pour alterner les couleurs des lignes
+   

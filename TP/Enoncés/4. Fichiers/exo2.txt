@@ -1,0 +1,26 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 2 - Création de la librairie HTML
+---------------------------------------------
+
+1. Dans la librairie html.inc.php vous allez créer une fonction htmlBeginXhtml() avec
+   2 paramètres : le titre et la langue. Cette fonction devra afficher tout ce qui se trouve dans
+   <head>...</head><body>
+2. Dupliquer la fonction précédente en la renomant htmlBeginHtml(). Cette nouvelle fonction 
+   doit renvoyer une en-tête Html compatible html 4.0
+3. Créer une fonction htmlMenu()qui accèpte 2 paramètres : $select et $lang ou $select
+   contient l'URL de la page selectionnée dans le menu (ex: index.php pour l'accueil)
+   Cette fonction doit générer le menu du site, à partir des informations contenues
+   dans la variable globale $menu. Si le $select correspond à une URL trouvée dans le tableau
+   $menu, ajouter l'attribut class="on" sur le liens hypertexte.
+4. Créer une fonction htmlBegin() qui accèpte 4 paramètres : le titre, la langue, l'URL du menu à 
+   selectionner (facultatif) et le mode d'affichage (xhtml ou html).
+   Cette fonction fait appel à htmlBeginHtml() ou htmlBeginXhtml() selon le mode, et 
+   fait appel à la fonction htmlMenu(). Elle génère alors l'affichage de tout l'en-tête de notre fichier 
+   html
+5. Faire une fonction htmlEnd() charger de fermer les balises ouvertes par htmlBegin() et
+   afficher le pied de page.
+6. Dans le fichier de configuration, créer une constante HTML_FORMAT qui stocke le format de sortie
+   souhaité. Les valeurs peuvent être xhtml ou html
+6. Utiliser ces 2 fonctions dans toutes nos pages (index.php, doBd.php et rechercheBd.php)

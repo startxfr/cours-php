@@ -1,0 +1,12 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 5 - Traitement de dates
+-----------------------------------
+
+1. Faire en sorte que les bas de pages affichent la date de dernière mise à jour.
+   Afin de rendre l'information dynamique, on affichera la date de 4 jours avant
+2. Dans le fichier de configuration conf.inc.php, utiliser la fonction setlocale()
+   pour définir la localisation du script. Vous pouvez utiliser la langue de configuration
+   pour créer le nom de locale (2eme paramètre de setlocale)
+3. en option: Utiliser microtime pour afficher le temps de calcul d'une page

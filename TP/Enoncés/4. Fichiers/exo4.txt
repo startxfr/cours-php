@@ -1,0 +1,44 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 4 - Traitement de chaines
+-------------------------------------
+Cet exercice a pour but de nous entrainer à manipuler des chaines de charactères avec les outils PHP
+
+1. Faire en sorte que les menus apparaissent en majuscule (en utilisant php, pas css ;)
+
+2. Dans le fichier doBd.php, contrôler la présence d'un "/" (on pourra utiliser la fonction strpos()) 
+   sur le nom des auteurs. S'il y a un "/", le remplacer par un retour à la ligne html <br/> et
+   Ajouter un 's' à la fin du libellé auteur. Les auteurs avec des noms multiples seront donc sur plusieurs ligne
+
+3. Créer une librairie appellée gabarit.inc.php et l'ajouter dans la liste des librairie à
+   charger (rajout d'une inclusion dans le fichier inc.inc.php)
+
+4. Créer une fonction remplirGabarit() prendra 3 arguments: 
+   . une chaine de charactère,  
+   . un tableau de rechercher/remplacer dont les clefs sont les expressions à chercher, et 
+     les valeurs sont les informations de substitution
+   . Une chaine de charactère servant de délimiteur pour les chaînes recherchées. Cette valeur
+     est optionnelle, et nous choisirons le '%' comme valeur par defaut
+   Utiliser votre connaissance des contrôles, des boucles pour transformer le tableau en 2 tableaux
+   un contenant la valeur recherchée (avec le délimiteur au debut et à la fin) 
+   et un de remplacement (avec utilisation de htmlentities() sur les valeurs de remplacement
+   
+   ainsi pour un tableau du type 
+   				$tab = array('titreLib'=>'Spirou','auteurLib'=>'Franquin')
+   nous aurons: $key = array('%titreLib%','%auteurLib%');
+   				$val = array('Spirou','Franquin');
+   
+   Utiliser ces éléments avec la fonction str_replace() pour effectuer un rechercher/remplacer
+
+5. Dans la page doBd.php, nous allons utiliser cette fonction pour remplir le tableau d'une
+   fiche Bd. Pour cela, nous devons:
+   1. Créer une variable $data qui rassemble toutes les informations sur un livre et qui sont utilisées
+      dans la fiche Html c'est à dire: 
+      .	les informations sur l'oeuvre
+	  .	les libellés dans la langue choisie
+	  . les informations provenant du formulaire (ex: la couleurde fond)
+	  ; les prix dans un format monétaire affichable.
+   2. Remplacer tout les 'echo' du tableau Html par la clef de recherche corespondante (ex: %titre%)
+   3. Stocker ce tableau Html <table>...</table> dans une chaîne de charactère $strFiche
+   4. Utiliser la fonction remplirGabarit() pour remplir $strFiche avec les informations de $data 

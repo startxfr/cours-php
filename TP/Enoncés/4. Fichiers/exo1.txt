@@ -1,0 +1,19 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 1 - Création de la librairie
+----------------------------------------
+
+1. Dans le répertoire inc/lib créer le fichier calcul.inc.php. Y copier nos 2 fonctions de calculs
+   (optionnel: mettre des commentaires avant chaque fonction, au format PHPDoc pour la future documentation
+   du logiciel)
+2. Mettre dans le fichier conf/conf.inc.php toutes les variables de configuration que 
+   nous avons créer jusqu'alors.
+3. Mettre dans le fichier conf/menu.inc.php notre tableau de menu
+4. Mettre dans le fichier conf/libelle.inc.php le tableau des libelle que nous avions dans doBd.php
+5. Mettre dans le fichier conf/livres.inc.php le tableau de livres que nous avions dans doBd.php
+6. Dans le fichier inc/inc.inc.php charger les fichiers de configurations, et les librairies
+7. Appeler le fichier inc/inc.inc.php depuis votre page doBd.php et verifier que tout fonctionne
+   comme avant
+8. Faire de même pour les fichiers rechercheBd.php et index.php. Ne pas oublier de récupérer les libelles
+   de la page rechercheBd.php dans le fichier de configuration des libellés.

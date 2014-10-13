@@ -1,0 +1,7 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 3 - Arrondi sur les calculs
+---------------------------------------
+
+1. Faire en sorte que les calculs de prix soient arrondi au dixième près

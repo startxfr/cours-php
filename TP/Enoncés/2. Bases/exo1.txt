@@ -1,0 +1,34 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 1 - Création du projet BDPhilia
+--------------------------------------------
+
+
+Ce TP nous suivra tout au long de la formation. Il nous servira
+de fil conducteur pour l'apprentissage du language PHP et de
+la construction d'une application internet.
+
+Afin de bien organiser notre projet, nous allons définir un 
+certain nombre de règles permettant de structurer notre travail.
+
+
+1. Préparation de notre espace de travail
+1.1 Créer un répertoire BDPhilia dans la racine du serveur web
+1.2 Si vous utilisez eclispe, créer votre projet
+1.3 Tester avec une page d'exemple (hello world dans le fichier index.html)
+
+2. Organisation de notre espace de travail
+Afin de structurer le projet, nous allons créer plusieurs répertoires
+pour stocker les différents fichiers de notre programme. Pour cela vous 
+devez:
+2.1 Créer un répertoire inc/ dans le répertoire de votre projet
+2.2 Créer un répertoire inc/conf/ pour stocker nos futurs fichiers de configuration
+2.3 Créer un fichier inc/conf/conf.inc.php pour stocker nos informations de configuration
+2.4 Créer un répertoire inc/lib/ pour stocker nos fichiers de librairies
+2.5 Créer un fichier inc/inc.inc.php pour charger nos librairies
+2.6 créer un fichier index.php, point d'entrée de notre futur application
+2.7 créer les répertoires img/ et gab/ pour stocker les images et les gabarits que
+    nous utiliserons plus tard
+
+

@@ -1,0 +1,27 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 2 - Création de la page d'accueil
+---------------------------------------------
+
+
+Vous allez maintenant créer la page d'accueil de BDPhilia.
+Pour cela, vous devez :
+
+1. Faire un hello world dans le fichier index.php en utilisant
+   la première commande que nous venons de voir: echo
+2. Remplacer ce hello world par une page html contenant:
+   1. Une déclaration XML
+   2. Un doctype XHTML 1.0 Strict
+   3. Une balise <html> conforme à la spécification xhtml
+   4. Une zone d'en-tête <head>
+   5. Un titre <title>
+   6. Une reférence vers l'auteur <meta name="author">
+   7. Une reférence vers le content-type <meta name="content-type"> xhtml
+   8. Un lien vers la feuille de style css.css uniquement applicable pour l'écran
+   9. Une zone de corps <body>
+   10.Dans le corps de votre fichier, créer 3 <div> avec les id "Btop" "Bmiddle" et "Bbottom"
+   11.Dans l'élément "Btop", mettre une liste de liens pointant vers les fichiers 
+      index.php, connexion.php, rechercheBd.php et panier.php. Inclure cette liste dans une balise avec l'id "topMenu"
+ 	
+

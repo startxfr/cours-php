@@ -1,0 +1,35 @@
+Installation d'eclipse
+======================
+
+1. Ajout des sites d'update
+----------
+http://download.eclipse.org/webtools/updates/
+http://download.eclipse.org/modeling/emf/updates/releases/
+http://download.eclipse.org/tools/gef/updates/releases/
+http://update.phpeclipse.net/update/stable/1.2.x
+
+2. Choix des packages
+----------
+2.1 GEF SDK 3.4.1
+2.2 EMF SDK 2.4.1
+2.3 Faire l'installation de ces 2 packages
+2.4 WTP - Enabling Features 3.0.3 (tout)
+    WTP - Web Tools Platform 3.0.3 (sauf Axis2*, Java EE*, Java Persistence*)
+    Patch Features (WST, WTP)
+    Uncategorized (sauf Dali*, Java *, JSF*, JST*, WSDL*)
+2.5 PHPeclipse
+2.6 Faire l'installation de tous ces packages
+
+
+3. Redemarrage Eclipse
+----------
+
+
+4. Création d'un nouveau projet
+----------
+4.1 Allez dans projet > Nouveau projet
+4.2 Choissisez General > Project
+4.3 Entrez le nom "CoursPhh"
+
+
+

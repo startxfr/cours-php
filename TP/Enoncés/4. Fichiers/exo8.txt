@@ -1,0 +1,26 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 8 - Manipulation de fichiers
+----------------------------------------
+
+1. Créer un fichier de librairie fichier.inc.php et l'ajouter à la liste d'inclusion
+2. Dans cette librairie créer la fonction lireFichier() prenant en argument l'URL d'un fichier
+   Et retournant le contenu de ce fichier
+3. (en option) Faire la fonction inverse qui puisse écrire dans un fichier
+4. Dans le répertoire gab, créer un fichier ficheBd.htm. Y mettre le contenu de la variable
+   $strFiche de doBd.php et enregistrer
+5. Utiliser la fonction lireFichier() combinée à remplirGabarit() pour obtenir un remplissage
+   de votre tableau. Cela vous permet de séparer affichage et programme. Mais c'est encore loin d'être
+   parfait ;)
+6. Dans le fichier de configuration livres.inc.php, nous allons maintenant remplacer les informations
+   sur les livres par celles contenu dans le fichier bd.csv. Vous devez :
+   1. Accéder au contenu du fichier via lireFichier()
+   2. Récupérer un tableau de chacune des lignes
+   3. Stocker le contenu de la première ligne, sous forme d'un tableau avec pour valeur les
+      entrées contenues dans la ligne (séparé par des ';')
+   4. Pour chaque ligne, faire un tableau des entrées de la ligne (séparé par ';'),
+      récupérer la première entrée de la ligne qui servira d'identifiant,
+      construire avec tous ces éléments le tableau $livres identique au précédent
+      (vous pouvez vous servir de print_r() pour tester le resultat et le comparer à la 
+      variable $livres existante

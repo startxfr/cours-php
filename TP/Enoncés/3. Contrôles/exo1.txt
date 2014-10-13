@@ -1,0 +1,15 @@
+TP Chapitre 3 - Les Contrôles
+=============================
+
+TP Exercice 1 - CGV
+-------------------
+
+1. Dans le fichier rechercheBd.php ajouter une case à cocher pour accépter les CGV 
+   (optionnel: faire un lien vers une page contenant les CGV)
+2. Mettre le texte en mode multilingue (utiliser une variable pour stocker la phrase 
+   "J'accepte les conditions générales de vente" en français et en anglais
+3. Dans le fichier doBd.php ajouter une variable $cgv booléenne indiquant
+   si l'utilisateur à coché la case "accepter les CGV"
+4. Faire un contrôle sur cette variable nous permettant de n'afficher la fiche de la BD que 
+   si les CGV ont été validé. Dans le cas contraire, afficher un message dans la langue
+   demandée (utilisez la variable $libelle précédement créée)

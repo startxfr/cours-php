@@ -1,0 +1,23 @@
+TP Chapitre 2 - Les bases
+=========================
+
+TP Exercice 3 - Ajout d'élément dynamique sur la page d'accueil
+---------------------------------------------------------------
+
+1. Copier le code PHP suivant au début de votre fichier index.php :
+   		<?php
+			$xmlVersion	  = '1.0';
+			$xmlEncoding  = 'UTF-8';
+			$lang		  = 'fr';
+			$projet		  = 'BDPhilia';
+			$proprietaire = 'Inexine';
+			$auteur		  = 'Christophe';
+			$css		  = 'css.css';
+		?>
+2. Créer 2 variables php $footer et $titre. $titre doit contenir une chaine de caractère
+   avec le message "Bienvenue sur " et le nom du projet. $footer contient un copyright suivi
+   du nom du propriétaire
+3. Utiliser toutes les variables données, ou créer, afin de rendre dynamique le contenu html 
+   précédement créée
+ 	
+

@@ -1,0 +1,12 @@
+TP Chapitre 5 - Les bases de données
+====================================
+
+TP Exercice 3 - Selection de donnée
+----------------------------------
+
+1. Dans le fichier livres.inc.php (dans le répertoire inc/conf/), remplcer le tableau PHP "codé en dur"
+   et le remplacer par une requête SQL. Vous devez respecter le fait que les clefs de ce tableaux sont les 
+   identifiant des livres.
+2. Modifier la fonction bdFiche() (dans le fichier inc/lib/bdphilia.inc.php) pour quelle récupère les information de
+   détail d'une BD directement depuis la base de donnée.
+   

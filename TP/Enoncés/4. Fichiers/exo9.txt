@@ -1,0 +1,22 @@
+TP Chapitre 4 - Les fichiers
+============================
+
+TP Exercice 9 - Synthèse
+------------------------
+
+L'objectif de ce TP est d'utiliser toutes les fonctions que nous venons de voir pour
+optimiser l'organisation de notre projet et préparer la suite de notre cursus.
+Vous allez devoir :
+
+1. Mettre en place un controle sur l'existance d'une image lors de l'affichage d'une fiche BD.
+   Faire de même pour le menu de navigation des fiches BD. (contrôle de l'existance d'une image pour
+   la Bd précédente et suivante)
+2. Faire ce même contôle pour le tableau d'inventaire
+3. Dans la librairie, ajouter un fichier bdphilia.inc.php. Créer une fonction bdInventaire()
+   permettant de générer le tableau des inventaire. Cette fonction devra accepter 3 arguments: 
+   $lang , $tri et $fond
+4. Idem pour l'affichage d'une fiche BD (dans la fonction bdFiche())
+5. Dans la page rechercheBd.php mettre le formulaire HTML dans un gabarit (formSearch.htm).
+   remplacer les balises ouvrantes php par le limiteur des gabarits (%). 
+   Dans la librairie bdphilia.inc.php,créer une fonction pour afficher se gabarit.
+   Appeler cette fonction depuis la page rechercheBd.php
