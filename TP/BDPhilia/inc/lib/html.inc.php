@@ -81,16 +81,12 @@
 	 */
 	function htmlMenu($select,$lang)
 	{
-		$menu = doSqlSelect(0,'SELECT * FROM menu');
-		$lang_id = '_'.$lang;
+		// Modifier cette fonction pour recuperer les informatios de menu depuis la base
 		$msg = '<div id="topMenu"><ul>';
-		foreach($menu as $k => $entree)
-		{
-			$css_on = ($select == $entree['url']) ? ' class="on"' : '';
-			$titre = htmlentities($entree['titre'.$lang_id]);
-			$desc = htmlentities(strtoupper($entree['desc'.$lang_id]));
-			$msg.= '<li><a href="'.$entree['url'].'" title="'.$titre.'"'.$css_on.'>'.$desc.'</a></li>';
-		}
+			$msg.= '<li><a href="index.php" title="Accueil">Accueil</a></li>
+					<li><a href="connexion.php" title="Connexion">Connexion</a></li>
+					<li><a href="rechercheBd.php" title="Liste">Rechercher</a></li>
+					<li><a href="panier.php" title="Liste">Panier</a></li>';
 		$msg.= '</ul></div>';
 		return $msg;
 	}

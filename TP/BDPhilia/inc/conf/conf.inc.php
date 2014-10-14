@@ -9,10 +9,11 @@ $auteur	  = 'Christophe';
 $css		  = 'css.css';
 $tauxTva[1]	  = 5.5;
 $tauxTva[2]	  = 19.6;
-define(TVA_APPLICABLE,1);
-define(HTML_FORMAT,'xhtml');
-define(NUMBER_SEP_DEC,',');
-define(NUMBER_SEP_MIL,' ');
+define('TVA_APPLICABLE',1);
+define('HTML_FORMAT','xhtml');
+define('NUMBER_SEP_DEC',',');
+define('NUMBER_SEP_MIL',' ');
+$lang = 'fr';
 
 
 $footer = "&copy;2009 - $proprietaire";
@@ -24,7 +25,7 @@ $dbConfig[0] = array(
 	'host' => 'localhost',
 	'user' => 'dev',
 	'pass' => 'dev',
-	'base' => 'bdphilia'
+	'base' => 'formation_phh_bdphilia'
 );
 $dbConfig[1] = array(
 	'type' => 'mssql',

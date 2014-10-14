@@ -47,54 +47,6 @@
 		return $msg;
 	}
 
-	/**
-	 * Affiche le pannier d'achat
-	 *
-	 * @author	Christophe Larue <clarue@startx.fr>
-	 * @param  $lang le code de la langue a utiliser
-	 * @return une chaine de charactère
-	 */
-	function bdPannier($lang)
-	{
-		global $libelle,$livres;
-		$j = $total = 0;
-		$msg 	= '<table width="100%">
-			<tr style="background-color: #bbb">
-				<th colspan="2">'.$libelle['titre'][$lang].'</th>
-				<th class="right" style="width:75px">'.$libelle['Quantite'][$lang].'</th>
-				<th class="right" style="width:75px">'.$libelle['prix'][$lang].'</th>
-				<th class="right" style="width:75px">'.$libelle['total'][$lang].'</th>
-				<th></th>
-			</tr>';
-
-		foreach($_SESSION as $id => $qte)
-		{
-			if(array_key_exists($id,$livres))
-			{
-				$livre = $livres[$id];
-				$sstot = $qte * $livre['prix'];
-				$total += $sstot;
-				$style = (($j % 2) == 0) ? ' style="background-color: #ddd"' : '';
-				$img	= (file_exists('img/bd/'.$id.'.jpg')) ? $id : 'defaut';
-				$msg .= '<tr'.$style.'>
-						<td class="center"><a href="doBd.php?ref='.$id.'"><img src="img/bd/'.$img.'.jpg" style="width: 20px;" alt="'.$id.'"/></a></td>
-						<td><a href="?ref='.$id.'">'.$livre['titre'].'</a></td>
-						<td class="right">'.$qte.'</td>
-						<td class="right">'.number_format($livre['prix'],2,NUMBER_SEP_DEC,NUMBER_SEP_MIL).' &euro;</td>
-						<td class="right">'.number_format($sstot,2,NUMBER_SEP_DEC,NUMBER_SEP_MIL).' &euro;</td>
-						<td class="right"><a href="?action=remOne&ref='.$id.'">-</a> &nbsp; <a href="?action=addOne&ref='.$id.'">+</a></td>
-					</tr>';
-				$j++;
-			}
-		}
-		$msg .= '<tr>
-				<th colspan="4">'.$libelle['total'][$lang].'</th>
-				<td>'.number_format($total,2,NUMBER_SEP_DEC,NUMBER_SEP_MIL).'</td>
-			</tr>
-			</table>';
-		return $msg;
-	}
-
 
 	/**
 	 * Affiche la fiche d'une BD donnée
@@ -107,11 +59,10 @@
 	 */
 	function bdFiche($ref,$lang,$fond = '')
 	{
-		global $libelle;
-		$livres = doSqlSelect(0,'SELECT * FROM livres WHERE ref = \''.$ref.'\'');
+		global $libelle,$livres;
 		if($livres !== false)
 		{
-			$data 	= $livres[0];
+			$data 	= $livres[$ref];
 			$ht		= $data['prix'];
 			$tva		= calcul_tva($ht,TVA_APPLICABLE);
 			$ttc		= calcul_ttc($ht,TVA_APPLICABLE);

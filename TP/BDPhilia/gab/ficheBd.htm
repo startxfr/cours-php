@@ -1,35 +1,36 @@
-<table style="background-color: #%fond%" width="100%">
-	<tr><td rowspan="8"style="text-align: center"><img src="img/bd/%img%.jpg" style="width: 100px;" alt="%ref%"/></td>
-		<th>%titreLib%</th>
-			<td>%titre%</td></tr>
-				<tr><th>%auteurLib%</th>
-					<td>%auteur%</td></tr>
-				<tr><th>%editeurLib%</th>
-					<td>%editeur%</td></tr>
-				<tr><th>%sortieLib%</th>
-					<td>%sortie%</td></tr>
-				<tr><th>%prixHTLib%</th>
-					<td>%prixHT% &euro;</td></tr>
-				<tr><th>%prixTVALib%</th>
-					<td>%prixTVA% &euro;</td></tr>
-				<tr><th>%prixTTCLib%</th>
-					<td>%prixTTC% &euro;</td></tr>
-				<tr><th>%commanderLib%</th>
-					<td>
-						<form action="panier.php" method="post">
-							<input type="text" name="qte" value="1" size="1"/>
-							<br class="clear"/>
-							<input value="%commanderLib%" type="submit" style="float: left"/>
-							<input type="hidden" name="ref" value="%ref%"/>
-							<input type="hidden" name="action" value="add"/>
-						<br class="clear"/>
-						</form>
-					</td></tr>
-			</table>
-			<table width="100%">
-				<tr>
-					<td style="width:10%">%previous%</td>
-					<td></td>
-					<td style="width:10%">%next%</td>
-				</tr>
-			</table>
+<!--table style="background-color: #%fond%" width="100%"-->
+<table width="100%">
+    <tr><td rowspan="8" style="text-align: center"><img src="img/bd/%img%.jpg" style="width: 100px;" alt="%ref%"/></td>
+        <th>%titreLib%</th>
+        <td>%titre%</td></tr>
+    <tr><th>%auteurLib%</th>
+        <td>%auteur%</td></tr>
+    <tr><th>%editeurLib%</th>
+        <td>%editeur%</td></tr>
+    <tr><th>%sortieLib%</th>
+        <td>%sortie%</td></tr>
+    <tr><th>%prixHTLib%</th>
+        <td>%prixHT% &euro;</td></tr>
+    <tr><th>%prixTVALib%</th>
+        <td>%prixTVA% &euro;</td></tr>
+    <tr><th>%prixTTCLib%</th>
+        <td>%prixTTC% &euro;</td></tr>
+    <tr><th>%commanderLib%</th>
+        <td>
+            <form action="panier.php" method="post">
+                <input type="text" name="qte" value="1" size="1"/>
+                <br class="clear"/>
+                <input value="%commanderLib%" type="submit" style="float: left"/>
+                <input type="hidden" name="ref" value="%ref%"/>
+                <input type="hidden" name="action" value="add"/>
+                <br class="clear"/>
+            </form>
+        </td></tr>
+</table>
+<table width="100%">
+    <tr>
+        <td style="width:10%">%previous%</td>
+        <td></td>
+        <td style="width:10%">%next%</td>
+    </tr>
+</table>

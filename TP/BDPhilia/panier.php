@@ -1,26 +1,15 @@
 <?php
-phpinfo();
+// On importe la librairie et on charge les fonctions utiles
 require_once('inc/inc.inc.php');
 
-echo htmlBegin($menu['panier.php'][$lang]['title'],$lang,'panier.php',HTML_FORMAT);
+echo htmlBegin(
+	$menu['panier.php'][$lang]['title'],// on passe un premier paramètre qui est le titre
+	$lang,//en second param la langue
+	'panier.php',// la clef du menu à selectionner
+	HTML_FORMAT// la constante qui décrit si je veux être en XHTML ou HTML
+);
 
-if(array_key_exists('action',$_POST) and 
-   $_POST['action'] == 'add')
-	$_SESSION[$_POST['ref']] += $_POST['qte'];
-	
 
-if(array_key_exists('action',$_GET) and 
-   $_GET['action'] == 'addOne')
-	$_SESSION[$_GET['ref']]++;
-if(array_key_exists('action',$_GET) and 
-   $_GET['action'] == 'remOne')
-{
-	if($_SESSION[$_GET['ref']] == 1)
-		unset($_SESSION[$_GET['ref']]);
-	else $_SESSION[$_GET['ref']]--;
-}	
-	
-echo bdPannier($lang);
-
+// on affiche la fin de notre document html
 echo htmlEnd();
 ?>
