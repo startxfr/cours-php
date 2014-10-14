@@ -9,10 +9,10 @@ $auteur	  = 'Christophe';
 $css		  = 'css.css';
 $tauxTva[1]	  = 5.5;
 $tauxTva[2]	  = 19.6;
-define(TVA_APPLICABLE,1);
-define(HTML_FORMAT,'xhtml');
-define(NUMBER_SEP_DEC,',');
-define(NUMBER_SEP_MIL,' ');
+define('TVA_APPLICABLE',1);
+define('HTML_FORMAT','xhtml');
+define('NUMBER_SEP_DEC',',');
+define('NUMBER_SEP_MIL',' ');
 $lang = 'fr';
 
 
